@@ -3,7 +3,8 @@ services:
     name: diary-bot
     env: python
     plan: free
-    buildCommand: pip install -r requirements.txt
+    buildCommand: |
+      pip install -r requirements.txt
     startCommand: python diary-bot.py
     envVars:
       - key: TELEGRAM_BOT_TOKEN
