@@ -6,7 +6,7 @@ services:
     pythonVersion: 3.11
     buildCommand: |
       pip install --upgrade pip
-      pip install -r requirements.txt
+      RUN pip install -r requirements.txt
     startCommand: python diary-bot.py
     envVars:
       - key: TELEGRAM_BOT_TOKEN
